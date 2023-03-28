@@ -27,7 +27,7 @@ a = int(input("請輸入第一個數字:"))
 b = int(input("請輸入第二個數字:"))
 c = int(input("請輸入第三個數字:"))
 
-if a+b > c or b+c > a or c+a >b:
+if a+b > c and b+c > a and c+a >b:
     print("這三個數字可以構成三角形")
 else:
     print("這三個數字不能構成三角形")
