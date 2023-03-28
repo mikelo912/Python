@@ -29,10 +29,10 @@ c = int(input("請輸入第三個數字:"))
 
 if a+b > c and b+c > a and c+a >b:
     print("這三個數字可以構成三角形")
+    if a == b == c:
+        print("此三角形為正三角形")
+    elif a == b or a == c or b == c:
+        print("此三角形為等腰三角形")
+    
 else:
     print("這三個數字不能構成三角形")
-    
-if a == b == c:
-    print("此三角形為正三角形")
-    elif a==b or a==c or b==c:
-        print("此三角形為等腰三角形")
