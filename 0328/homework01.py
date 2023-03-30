@@ -26,6 +26,6 @@ while True:
         for i in range(scores.count(f)):
             index = scores.index(f,start)
             scores.pop(index)
-            start = index + 1
+            start = index
     else:
         print("沒有此分數")
