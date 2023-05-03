@@ -24,4 +24,3 @@ class Clerk(Person):
         
 Bill = Clerk('Bill',32000)
 Bill.pay()
-p = Person()
