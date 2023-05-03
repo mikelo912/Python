@@ -26,7 +26,7 @@ class Role:
 class Adivser(Role):
     def __init__(self,name,hp,level):
         self.level = level
-        super().__init__(name, hp) #呼叫父類別
+        super().__init__(name, hp) #呼叫父類別中的初始化方法
         
     def fight(self): #重新定義(覆寫 override)
         print('軍師扇扇攻擊')
