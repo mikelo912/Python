@@ -11,6 +11,6 @@ with open(fn,encoding='utf-8') as f:
     newdata = data.replace('單身受薪','蔡依林') #用後面的字串取代前面的字串
     print(newdata.strip())
     
-with open("news.txt",'w',encoding='UTF-8') as f:
+with open("news.txt",'w',encoding='UTF-8') as f: #將更改過的資料存到新的檔案
     f.write(newdata.strip())
     
