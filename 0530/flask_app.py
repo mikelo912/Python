@@ -1,5 +1,5 @@
 from flask import Flask, request, abort
-
+#輕量級網頁框架
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -47,10 +47,10 @@ def handle_message(event):
     
     if '空氣' in linemsg:
         response = getBike()
-    elif '圖片' in linemsg():
+    elif '圖片' in linemsg:
         response = '圖片搜尋中請稍後'
     else:
-        response = getIfno(linemsg)
+        response = getInfo(linemsg)
    
     
     message = TextSendMessage(text=response)
@@ -60,6 +60,7 @@ def handle_message(event):
         message)
 
 import os
+from ntpbike import getBike
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)

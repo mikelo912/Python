@@ -9,8 +9,8 @@ import json
 
 import requests
 
-def get_bike():
-    url = "https://data.ntpc.gov.tw/api/datasets/010e5b15-3823-4b20-b401-b1cf000550c5/json?size=2000"
+def getBike():
+    url = "https://data.epa.gov.tw/api/v2/aqx_p_432?api_key=e8dd42e6-9b8b-43f8-991e-b3dee723a52d&limit=1000&sort=ImportDate%20desc&format=JSON"
     
     data = requests.get(url).text
     
@@ -19,7 +19,8 @@ def get_bike():
     #a = data['records'][]
     
     air = bike['records']
-    msg = 'bike'
+    #print(air)
+    msg = ''
     i = 0
     for item in air:
         msg += item['sitename']+"-"+item['aqi']+"\n"
@@ -28,3 +29,5 @@ def get_bike():
             break
         
     return msg
+
+#print(getBike())
