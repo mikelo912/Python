@@ -8,7 +8,8 @@ This is a temporary script file.
 import os
 import openai
 
-openai.api_key = "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"
+#openai的金鑰
+openai.api_key = "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"
 
 q = input("請輸入要詢問的問題:")
 
@@ -22,5 +23,7 @@ response = openai.Completion.create(
   presence_penalty=0
 )
 
-ans = response['choices'][0]['text'].strip()
+#回應內容是json格式
+#print(response)
+ans = response['choices'][0]['text'].strip() #strip()去前後空白
 print(ans)
