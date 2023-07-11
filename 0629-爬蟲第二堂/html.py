@@ -46,7 +46,7 @@ link = a.get('href') #get抓標籤裡面的屬性
 print(link) #顯示超連結網址
 print(a.text) #顯示超連結的文字
 img = soup.find('img').get('src')
-print(img) #抓圖片
+print(img) #抓圖片網址
 
 textarea = soup.find(id="area")
 print(textarea)
