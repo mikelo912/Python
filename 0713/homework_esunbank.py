@@ -26,9 +26,16 @@ trs = trs[2:]
 
 for item in trs:
     tds = item.find_all('td')
+    # print(len(tds))
     # print(tds[0])
-    # print(tds[1])
-    # print(tds[2])
-    # print(tds[3])
     # break
-    print(len(tds))
+
+    if len(tds) == 7:
+        currency = tds[0].text.strip().split()
+        print(currency[0],currency[1])
+        print(tds[-3])
+        print('即期匯率',tds[-3].text)
+        print('網銀/App優惠',tds[-2].text)
+        print('現金匯率',tds[-1].text)
+        print('-'*30)
+        # break
