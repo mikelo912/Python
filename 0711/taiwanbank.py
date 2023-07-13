@@ -30,10 +30,12 @@ for item in trs:
     currency = tds[0].text.strip()
     currency = currency.split() #strip()->去除前後空白
     print('幣別:',currency[0],currency[1])
-    print(tds[1].text.strip())
-    print(tds[2].text.strip())
-    print(tds[3].text.strip())
-    print(tds[4].text.strip())
+    print('現金匯率')
+    print('本行買入:',tds[1].text.strip())
+    print('本行賣出:',tds[2].text.strip())
+    print('即期匯率')
+    print('本行買入:',tds[3].text.strip())
+    print('本行賣出:',tds[4].text.strip())
     print()
     
     
