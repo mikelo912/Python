@@ -23,6 +23,7 @@ rate = soup.find('table')
 allRate = rate.find('tbody')
 trs = allRate.find_all('tr') #抓取每一行的資料
 
+#在每行資料中抓每一格資料
 for item in trs:
     tds = item.find_all('td')
     #print(tds)
