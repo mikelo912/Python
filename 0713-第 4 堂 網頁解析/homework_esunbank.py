@@ -5,10 +5,11 @@ Spyder Editor
 This is a temporary script file.
 """
 
-import requests
-from bs4 import BeautifulSoup
+import requests #HTTP函式庫，可向網站發送HTTP請求並得到回應
+from bs4 import BeautifulSoup #分析網頁的HTML與XML文件，並將分析結果轉換成tag的型態
 
 url = 'https://www.esunbank.com/zh-tw/personal/deposit/rate/forex/foreign-exchange-rates'
+#偽裝成瀏覽器
 header={'User-Agent':
 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'}
 data = requests.get(url,headers=header)
