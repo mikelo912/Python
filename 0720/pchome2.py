@@ -27,13 +27,13 @@ for i in range(1,6):
         describe = item['describe']
         pic = 'https://cs-a.ecimg.tw' + item['picB']
         price = item['price']
-        URL = 'https://24h.pchome.com.tw/prod/' + item['Id']
+        URL2 = 'https://24h.pchome.com.tw/prod/' + item['Id']
         
         print(name)
         print(describe)
         print('網路價:',price,'元')
         print(pic)
-        print(URL)
+        print(URL2)
         print()
     print('-'*30)
     
