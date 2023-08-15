@@ -1,0 +1,45 @@
+body{
+	margin: 0; /*外部距離設定為0 上下左右都是0*/
+}
+
+#banner{
+height: 60px;
+width: 100%;
+}
+
+#menu{
+height: 45px;
+width: 100%;
+background-color: #044996;
+}
+
+#content{
+min-height: 450px;
+width: 100%;
+}
+
+#footer{
+height: 50px;
+width: 100%;
+background-color: #000000; /*背景色: 黑色*/
+color: #ffffff; /*字的顏色: 白色*/
+}
+
+#menu li{
+	list-style: none; /*設定項目符號*/
+	float: left; /*圖案浮動於左邊*/
+	padding-left: 2em; /*左邊留白*/
+	padding-right: 2em;
+}
+
+#menu ul{
+	line-height: 45px;
+	margin-left: 30%;
+}
+
+#menu a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: bold;
+}
