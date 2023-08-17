@@ -1,0 +1,24 @@
+{% extends 'Base.html' %}
+
+{% block title %}
+商品
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/product.css')}}">
+{% endblock %}
+
+{% block maincontent %}
+	{% for item in allGoods %}
+	<div class='productarea'>
+
+		<a href="{{item[4]}}" target="_blank"> <img src="{{item[3]}}"></a>
+		<p>{{item[2]}}</p>
+		<p>NT:{{item[6]}}</p>
+
+	</div>
+	{% endfor %}
+{% endblock %}
+
+
+

@@ -1,0 +1,14 @@
+.productarea{
+	width:10%;
+	margin-left: 2em;
+	margin-right:2em;
+	height:300px;
+	float:left;
+}
+
+.productarea img{
+	width: 100%;
+}
+
+
+
