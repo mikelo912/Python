@@ -9,7 +9,7 @@ import os
 import openai
 
 #openai的金鑰
-openai.api_key = "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"
+openai.api_key = "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"
 
 q = input("請輸入要詢問的問題:")
 
